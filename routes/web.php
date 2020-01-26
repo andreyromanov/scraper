@@ -23,3 +23,6 @@ Route::group(['prefix' => 'dashboard'], function() {
     Route::resource('/item-schema', 'ItemSchemaController');
     Route::resource('/articles', 'ArticlesController');
 });
+
+
+Route::get('/online', 'MainController@scrape');
