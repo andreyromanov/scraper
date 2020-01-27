@@ -26,3 +26,4 @@ Route::group(['prefix' => 'dashboard'], function() {
 
 
 Route::get('/online', 'MainController@scrape');
+Route::get('/online_pro', 'MainController@Proscrape');
